@@ -29,9 +29,13 @@ export default {
                 <img src="../../public/images/slide-1.jpg" alt=""> 
             </div>
         </div>
+        <h2>Popular Development Courses</h2>
     </div>
 </template>
 <style lang="scss" scoped>
+h2{
+    margin-left: 105px;
+}
 .jumbotron-bar{
     background-color: #273044;
     color: white;

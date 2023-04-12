@@ -68,11 +68,9 @@ nav{
     gap: 25px;
     align-items: center;
 
-
     div{
       display: flex;
       flex-direction: row;
-      // align-items: center;
       input{
         padding: 8px 25px;
         border: 0px;

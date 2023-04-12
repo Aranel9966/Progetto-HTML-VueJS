@@ -66,7 +66,7 @@ export default {
 }
 .main-menu{
     text-align: center;
-    height: 200px;
+    height: 130px;
     .menu{
         ul{
             justify-content: center;
