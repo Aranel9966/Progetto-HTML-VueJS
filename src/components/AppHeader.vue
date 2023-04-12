@@ -48,8 +48,10 @@ export default{
 <style lang="scss" scoped>
 nav{
   .nav-top{
+    width: 1300px;
+    margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 10px;
     color: lightgrey;
     ul{
@@ -63,7 +65,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 10px;
+    gap: 25px;
     align-items: center;
 
 
@@ -72,7 +74,7 @@ nav{
       flex-direction: row;
       // align-items: center;
       input{
-        padding: 8px 15px;
+        padding: 8px 25px;
         border: 0px;
         background-color: #f0f2f5;
       }

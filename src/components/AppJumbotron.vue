@@ -1,6 +1,6 @@
 <script>
 export default {
-    date(){
+    data(){
         return{
 
         }
@@ -11,17 +11,16 @@ export default {
     <div>
         <div class="jumbotron-bar">
             <ul>
-                <li><span><i class="fa-solid fa-chart-column"></i></span>Busness</li>
-                <li><span><i class="fa-solid fa-palette"></i></span>Design</li>
-                <li><span><i class="fa-solid fa-gear"></i></span>Development</li>
-                <li><span><i class="fa-regular fa-face-smile"></i></span>Lifestyle</li>
-                <li><span><i class="fa-solid fa-wallet"></i></span>Office Productivity</li>
+                <li><span><i class="fa-solid fa-chart-column"></i></span> <a href=""> Busness</a></li>
+                <li><span><i class="fa-solid fa-palette"></i></span> <a href=""> Design</a></li>
+                <li><span><i class="fa-solid fa-gear"></i></span> <a href=""> Development</a></li>
+                <li><span><i class="fa-regular fa-face-smile"></i></span> <a href=""> Lifestyle</a></li>
+                <li><span><i class="fa-solid fa-wallet"></i></span> <a href=""> Office Productivity</a></li>
             </ul>
         </div>
         <div class="jumbotron">
             <div class="color">
                 <div class="text">
-
                     <h1>Udemy Affiliate Sales</h1>
                     <p>Monetize your audience and attract new customers with Udemy!</p>
                 </div>
@@ -41,12 +40,16 @@ export default {
     padding: 15px;
     margin-bottom: 20px;
     ul{
+        a{
+        text-decoration: none;
+        color: white;
+        }
         display: flex;
         flex-direction: row;
-        gap: 15px;
+        gap: 40px;
         list-style-type: none;
         span{
-            padding: 5px;
+            padding: 10px;
         }
     }
 }
@@ -56,6 +59,7 @@ export default {
     width: 100%;
     position: relative;
     justify-content: flex-end;
+    margin-bottom: 100px;
     .color{
         width: 60%;
         border-right: 200px solid transparent;
