@@ -6,6 +6,7 @@ import AppCard from './components/AppCard.vue';
 import AppMainTop from './components/AppMainTop.vue';
 import AppMainMid from './components/AppMainMid.vue';
 import AppMainBot from './components/AppMainBot.vue';
+import AppFooter from './components/AppFooter.vue';
 export default{
   data(){
     return{
@@ -169,7 +170,9 @@ export default{
     AppCard,
     AppMainTop,
     AppMainMid,
-    AppMainBot
+    AppMainBot,
+    AppFooter
+
   }
 }
 </script>
@@ -185,6 +188,7 @@ export default{
     <AppMainMid></AppMainMid>
     <AppCard :cards="cards2" class="bg-color"></AppCard>
     <AppMainBot></AppMainBot>
+    <AppFooter></AppFooter>
 
   </div>
 </template>
