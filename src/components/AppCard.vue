@@ -49,6 +49,7 @@ export default {
     gap: 10px;
     padding: 50px;
     .card{
+        background-color: white;
         border: 2px solid lightgray;
         width: 274px;
         .img-card{

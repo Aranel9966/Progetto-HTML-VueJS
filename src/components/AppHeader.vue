@@ -32,12 +32,12 @@ export default{
         <p><i class="fa-solid fa-bars"></i> CATEGORY</p>
         <div>
           <input type="text" placeholder="Search courses">
-          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <a href="#"><span><i class="fa-solid fa-bullhorn"></i></span> Become an instructor</a>
         <a href="#"><span><i class="fa-solid fa-suitcase"></i></span> For Enterprise</a>
         <a href="#"><span><i class="fa-regular fa-user"></i></span> Log in</a>
-        <img src="../../public/images/hover-button1.png" alt="">
+        <button class="btn-primary">SING UP</button>
         <a href="#"><span><i class="fa-regular fa-bookmark"></i></span></a>
         
       </div>
@@ -76,7 +76,7 @@ nav{
         border: 0px;
         background-color: #f0f2f5;
       }
-      button{
+      .btn{
         padding: 5px 15px;
         background-color: #457993;
         color: white;

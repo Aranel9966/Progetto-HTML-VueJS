@@ -5,6 +5,7 @@ import AppjumbotronVue from './components/Appjumbotron.vue';
 import AppCard from './components/AppCard.vue';
 import AppMainTop from './components/AppMainTop.vue';
 import AppMainMid from './components/AppMainMid.vue';
+import AppMainBot from './components/AppMainBot.vue';
 export default{
   data(){
     return{
@@ -167,7 +168,8 @@ export default{
     AppjumbotronVue,
     AppCard,
     AppMainTop,
-    AppMainMid
+    AppMainMid,
+    AppMainBot
   }
 }
 </script>
@@ -181,11 +183,14 @@ export default{
     <AppCard :cards="cards2"></AppCard>
     <AppCard :cards="cards3"></AppCard>
     <AppMainMid></AppMainMid>
-    <AppCard :cards="cards2"></AppCard>
+    <AppCard :cards="cards2" class="bg-color"></AppCard>
+    <AppMainBot></AppMainBot>
 
   </div>
 </template>
 
 <style lang="scss" scoped>
-
+.bg-color{
+  background-color: #f0f4fa;
+}
 </style>

@@ -19,7 +19,7 @@ export default {
                 Online courses open the opportunity for learning to almost anyone.
                 regardless of their scheduling commitments.
             </p>
-            <button>READ MORE</button>
+            <button class="btn-primary">READ MORE</button>
         </div>
     </div>
     <div class="main-menu">
@@ -54,14 +54,14 @@ export default {
             font-size: 40px;
             padding-bottom: 10px;
         }
-        button{
-            background-color: #ff4450;
-            border-radius: 40px;
-            padding: 15px 25px;
-            border-color: transparent;
-            color: white;
-            margin: 20px 0;
-        }
+        // button{
+        //     background-color: #ff4450;
+        //     border-radius: 40px;
+        //     padding: 15px 25px;
+        //     border-color: transparent;
+        //     color: white;
+        //     margin: 20px 0;
+        // }
     }
 }
 .main-menu{

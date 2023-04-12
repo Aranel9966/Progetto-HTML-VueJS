@@ -55,25 +55,27 @@ export default {
             color: white;
             padding: 5px;
             border-color: transparent;
+            border-radius: 0px;
         }
     }
 }
 .title{
     text-align: center;
     padding: 50px;
+    background-color: #f0f4fa;
 }
 .btn{
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
-    .btn-primary{
-        background-color: #ff4450;
-        border-radius: 40px;
-        padding: 15px 25px;
-        border-color: transparent;
-        color: white;
-        margin: 20px 0;
-    }
+    // .btn-primary{
+    //     background-color: #ff4450;
+    //     border-radius: 40px;
+    //     padding: 15px 25px;
+    //     border-color: transparent;
+    //     color: white;
+    //     margin: 20px 0;
+    // }
 }
 
 </style>
