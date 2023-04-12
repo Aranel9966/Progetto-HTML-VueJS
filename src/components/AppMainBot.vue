@@ -73,6 +73,10 @@ export default {
         border: 1px solid lightgray;
         background-color: white;
         color:lightgray ;
+        &:hover{
+            cursor: pointer;
+            background-color:#457993 ;
+        }
     }
 }
 .container{
