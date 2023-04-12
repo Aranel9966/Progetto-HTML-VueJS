@@ -21,4 +21,14 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
 }
+ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+a{
+  text-decoration: none;
+  color: #457993;
 
+}

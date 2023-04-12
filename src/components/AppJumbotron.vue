@@ -63,23 +63,23 @@ export default {
     .color{
         width: 60%;
         border-right: 200px solid transparent;
-        border-bottom: 325px solid #ff4450;
+        border-bottom: 406.11px solid #ff4450;
         position: absolute;
         top: 0;
         left: 0;
         .text{
+            width: 400px;
             color: white;
             position: absolute;
             top: 100px;
-            left:120px;
-            overflow: auto;
+            right:10%;
         }
     }
     .img{
         display: flex;
         justify-content: flex-end;
         img{
-            width: 800px;
+            width: 1000px;
         }
     }
 }

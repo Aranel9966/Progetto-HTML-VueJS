@@ -3,6 +3,7 @@ import AppHeader from './components/AppHeader.vue';
 import '@fortawesome/fontawesome-free/css/all.css';
 import AppjumbotronVue from './components/Appjumbotron.vue';
 import AppCard from './components/AppCard.vue';
+import AppMainTop from './components/AppMainTop.vue';
 export default{
   data(){
     return{
@@ -12,7 +13,8 @@ export default{
   components:{
     AppHeader,
     AppjumbotronVue,
-    AppCard
+    AppCard,
+    AppMainTop
   }
 }
 </script>
@@ -22,6 +24,7 @@ export default{
     <AppHeader></AppHeader>
     <AppjumbotronVue></AppjumbotronVue>
     <AppCard></AppCard>
+    <AppMainTop></AppMainTop>
   </div>
 </template>
 
