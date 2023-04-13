@@ -77,4 +77,9 @@ export default {
     }
 
 }
+@media only screen and (max-width: 690px) {
+  .row{
+    flex-wrap: wrap;
+  }
+}
 </style>

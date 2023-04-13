@@ -49,7 +49,7 @@ export default {
         position: absolute;
         top: 40%;
         left: 20%;
-        width: 450px;
+        max-width: 450px;
         h1{
             font-size: 40px;
             padding-bottom: 10px;
@@ -61,6 +61,7 @@ export default {
     height: 130px;
     .menu{
         ul{
+            flex-wrap: wrap;
             justify-content: center;
             margin: 50px;
             gap: 25px;

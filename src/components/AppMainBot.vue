@@ -81,6 +81,7 @@ export default {
 }
 .container{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     padding: 40px;
@@ -97,7 +98,7 @@ export default {
             }
         }
         .text-container{
-            width: 400px;
+            max-width: 400px;
             padding: 50px;
             p{
                 color: gray;
@@ -113,7 +114,7 @@ export default {
     .text{
         line-height:32px;
         height: 450px;
-        width: 600px;
+        max-width: 600px;
         background-color: white;
         position: absolute;
         left: 500px;
@@ -122,6 +123,16 @@ export default {
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+}
+@media only screen and (max-width: 1105px) {
+  .container-bot{
+        .text{
+            left: 0px;
+        }
+    }
+    .left-container,.right-container{
+        flex-wrap: wrap;
     }
 }
 </style>

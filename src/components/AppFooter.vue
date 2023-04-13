@@ -49,6 +49,8 @@ footer{
     color: white;
     .footer-top{
         display: flex;
+        flex-wrap: wrap;
+
         justify-content: center;
         gap: 120px;
         padding: 30px;
@@ -70,7 +72,7 @@ footer{
         display: flex;
         align-items: center;
         gap: 20px;
-        width: 1200px;
+        max-width: 1200px;
         margin: auto;
         padding: 20px;
         img{

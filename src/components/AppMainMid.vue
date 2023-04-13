@@ -71,7 +71,7 @@ export default {
         background-color: #ff4450;
         padding: 30px;
         .text{
-            width: 700px;
+            max-width: 700px;
         }
         .form{
             input{

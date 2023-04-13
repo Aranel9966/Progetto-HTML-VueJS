@@ -62,14 +62,15 @@ h2{
     padding: 15px;
     margin-bottom: 20px;
     ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 40px;
+        list-style-type: none;
         a{
         text-decoration: none;
         color: white;
         }
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
-        list-style-type: none;
         span{
             padding: 10px;
         }
@@ -90,7 +91,7 @@ h2{
         top: 0;
         left: 0;
         .text{
-            width: 400px;
+            max-width: 400px;
             color: white;
             position: absolute;
             top: 100px;
@@ -101,7 +102,7 @@ h2{
         display: flex;
         justify-content: flex-end;
         img{
-            width: 1000px;
+            max-width: 1000px;
         }
     }
 }

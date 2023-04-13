@@ -53,22 +53,26 @@ nav{
     max-width: 1300px;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
     color: lightgrey;
     ul{
       list-style-type: none;
       display: flex;
+      flex-wrap: wrap;
       flex-direction: row;
       gap: 15px;
     }
   }
   .nav-bot{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     gap: 25px;
     align-items: center;
+
 
     div{
       display: flex;
