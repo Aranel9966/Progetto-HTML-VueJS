@@ -3,6 +3,16 @@ export default {
     name:'AppMainTop',
     data(){
         return{
+            options:[
+                'All Categories',
+                'Business',
+                'Design',
+                'Development',
+                'IT & Softwere',
+                'Lifestyle',
+                'Marketing',
+                'Office Productivity',
+            ]
 
         }
     } 
@@ -26,14 +36,7 @@ export default {
         <h1>Recent courses</h1>
         <div class="menu">
             <ul>
-                <li> <a href="#"> All Categories</a></li>
-                <li> <a href="#"> Business</a></li>
-                <li> <a href="#"> Design</a></li>
-                <li> <a href="#"> Development</a></li>
-                <li> <a href="#"> IT & Softwere</a></li>
-                <li> <a href="#">  Lifestyle</a></li>
-                <li> <a href="#"> Marketing</a></li>
-                <li> <a href="#"> Office Productivity</a></li>
+                <li v-for="option in options"> <a href="#" > {{option}}</a></li>
             </ul>
         </div>
     </div>

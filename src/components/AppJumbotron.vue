@@ -2,6 +2,28 @@
 export default {
     data(){
         return{
+            options:[
+                {
+                    option:'Busness',
+                    icon:'fa-solid fa-chart-column'
+                },
+                {
+                    option:'Design',
+                    icon:'fa-solid fa-palette'
+                },
+                {
+                    option:'Development',
+                    icon:'fa-solid fa-gear'
+                },
+                {
+                    option:'Lifestyle',
+                    icon:'fa-regular fa-face-smile'
+                },
+                {
+                    option:'Office Productivity',
+                    icon:'fa-solid fa-wallet'
+                }
+            ]
 
         }
     }
@@ -11,11 +33,7 @@ export default {
     <div>
         <div class="jumbotron-bar">
             <ul>
-                <li><span><i class="fa-solid fa-chart-column"></i></span> <a href=""> Busness</a></li>
-                <li><span><i class="fa-solid fa-palette"></i></span> <a href=""> Design</a></li>
-                <li><span><i class="fa-solid fa-gear"></i></span> <a href=""> Development</a></li>
-                <li><span><i class="fa-regular fa-face-smile"></i></span> <a href=""> Lifestyle</a></li>
-                <li><span><i class="fa-solid fa-wallet"></i></span> <a href=""> Office Productivity</a></li>
+                <li  v-for="option in options"><span><i :class=option.icon></i></span> <a href=""> {{option.option}}</a></li>
             </ul>
         </div>
         <div class="jumbotron">
