@@ -13,7 +13,6 @@ export default {
                 'Marketing',
                 'Office Productivity',
             ]
-
         }
     } 
 }           
@@ -35,9 +34,7 @@ export default {
     <div class="main-menu">
         <h1>Recent courses</h1>
         <div class="menu">
-            <ul>
-                <li v-for="option in options"> <a href="#" > {{option}}</a></li>
-            </ul>
+            <ul><li v-for="option in options"> <a href="#" > {{option}}</a></li></ul>
         </div>
     </div>
 </template>
@@ -57,14 +54,6 @@ export default {
             font-size: 40px;
             padding-bottom: 10px;
         }
-        // button{
-        //     background-color: #ff4450;
-        //     border-radius: 40px;
-        //     padding: 15px 25px;
-        //     border-color: transparent;
-        //     color: white;
-        //     margin: 20px 0;
-        // }
     }
 }
 .main-menu{

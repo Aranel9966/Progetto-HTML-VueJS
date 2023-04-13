@@ -9,7 +9,14 @@ export default {
 }           
 </script>
 <template>
-    <div>
+    <div class="box">
+        <div class="lateral-menu">
+            <i class="fa-solid fa-tv"></i>
+            <i class="fa-regular fa-circle-xmark"></i>
+            <i class="fa-solid fa-wrench"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-mobile-screen"></i>
+        </div>
         <div class="btn">
             <button class="btn-primary">SHOW ALL</button>
         </div>
@@ -35,47 +42,60 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: #ff4450;
-    padding: 30px;
-    .text{
-        width: 700px;
-    }
-    .form{
-        input{
-            margin: 10px 0;
-            padding: 5px;
-        }
-        button{
-            background-color: #457993;
-            color: white;
-            padding: 5px;
-            border-color: transparent;
-            border-radius: 0px;
-        }
-    }
-}
-.title{
-    text-align: center;
-    padding: 50px;
-    background-color: #f0f4fa;
-}
-.btn{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
-    // .btn-primary{
-    //     background-color: #ff4450;
-    //     border-radius: 40px;
-    //     padding: 15px 25px;
-    //     border-color: transparent;
-    //     color: white;
-    //     margin: 20px 0;
-    // }
-}
+.box{
+    position: relative;
 
+    .lateral-menu{
+        position: absolute;
+        padding: 10px;
+        right: 0;
+        top: -150px;
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+        align-items: center;
+        gap: 15px;
+        border: 1px solid lightgray;
+        box-shadow: 10px 10px 5px #dedede;
+        color: rgb(62, 61, 61);
+        i:hover{
+            cursor: pointer;
+            color: black;
+        }
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: #ff4450;
+        padding: 30px;
+        .text{
+            width: 700px;
+        }
+        .form{
+            input{
+                margin: 10px 0;
+                padding: 5px;
+            }
+            button{
+                background-color: #457993;
+                color: white;
+                padding: 5px;
+                border-color: transparent;
+                border-radius: 0px;
+            }
+        }
+    }
+    .title{
+        text-align: center;
+        padding: 50px;
+        background-color: #f0f4fa;
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+}
 </style>

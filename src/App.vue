@@ -216,8 +216,8 @@ export default{
     }
   },
   methods: {
+    //controlli per la rotazione degli array
     arrowLeft(){
-      console.log('ciao')
       if(this.cardsExchange== this.cards1){
         this.cardsExchange=this.cards3
       }else if(this.cardsExchange==this.cards3  ){
@@ -244,7 +244,6 @@ export default{
     AppMainMid,
     AppMainBot,
     AppFooter
-
   }
 }
 </script>

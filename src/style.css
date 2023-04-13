@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
-
 .btn-primary{
   background-color: #ff4450;
   border-radius: 40px;
@@ -17,7 +16,6 @@
   background-color: #009b72;
   cursor: pointer;
 }
-
 ul{
   list-style-type: none;
   display: flex;
