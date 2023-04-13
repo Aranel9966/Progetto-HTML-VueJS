@@ -161,7 +161,79 @@ export default{
                     price:'$69.99',
                     discount:'$35'
                 },
-      ]
+      ],
+      cardsExchange:[
+                {
+                    type:'Decelopment',
+                    img:"../public/images/895786_7b4b_2-272x161.jpg" ,
+                    text:'The Complete iOS 10 & Swift 3 Developer Course',
+                    vote:4,
+                    price:'$199.99',
+                    discount:'$100'
+                },
+                
+                {
+                    type:'Design',
+                    img:"../public/images/1561458_7f3b-272x161.jpg " ,
+                    text:'CSS - The Complete Guide 2020 (incl. Flexbox, Grid & Sass)',
+                    vote:5,
+                    price:'$199.99',
+                    discount:'$100'
+                },
+                {
+                    type:'Decelopment',
+                    img:"../public/images/246154_d8b0_3-272x161.jpg" ,
+                    text:'Web Design for Beginners: Real World coding in HTML & CSS',
+                    vote:4,
+                    price:'$129.99',
+                    discount:'$65'
+                },
+                {
+                    type:'Design',
+                    img:"../public/images/1208228_d61c_4-272x161.jpg" ,
+                    text:'Digitally Painting Light and Colar: Amateur to Master',
+                    vote:4,
+                    price:'$139.99',
+                    discount:'$70'
+                },
+                {
+                    type:'Arts & Crafts',
+                    img:"../public/images/186792_41e4_4-272x161.jpg" ,
+                    text:'Become an Arabic Calligraphy Artist from Scratch',
+                    vote:4,
+                    price:'',
+                    discount:'$199.99'
+                },
+                {
+                    type:'Google',
+                    img:"../public/images/1776542_30b1-272x161.jpg" ,
+                    text:'Google Searching Ninja!',
+                    vote:4,
+                    price:'$89.99',
+                    discount:'$45'
+                },
+      ],
+    }
+  },
+  methods: {
+    arrowLeft(){
+      console.log('ciao')
+      if(this.cardsExchange== this.cards1){
+        this.cardsExchange=this.cards3
+      }else if(this.cardsExchange==this.cards3  ){
+        this.cardsExchange=this.cards2
+      }else{
+        this.cardsExchange=this.cards1
+      }
+    },
+    arrowRight(){
+      if(this.cardsExchange== this.cards1){
+        this.cardsExchange=this.cards2
+      }else if(this.cardsExchange==this.cards2  ){
+        this.cardsExchange=this.cards3
+      }else{
+        this.cardsExchange=this.cards1
+      }
     }
   },
   components:{
@@ -186,8 +258,8 @@ export default{
     <AppCard :cards="cards2"></AppCard>
     <AppCard :cards="cards3"></AppCard>
     <AppMainMid></AppMainMid>
-    <AppCard :cards="cards2" class="bg-color"></AppCard>
-    <AppMainBot></AppMainBot>
+    <AppCard :cards="cardsExchange" class="bg-color"></AppCard>
+    <AppMainBot @left="arrowLeft()" @right="arrowRight()"></AppMainBot>
     <AppFooter></AppFooter>
 
   </div>

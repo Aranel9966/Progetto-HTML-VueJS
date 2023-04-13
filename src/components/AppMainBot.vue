@@ -10,10 +10,10 @@ export default {
 </script>
 <template>
     <div class="container-top">
-        <div class="left">
+        <div @click="$emit('left')" class="left">
             <i class="fa-solid fa-chevron-left"></i>
         </div>
-        <div class="right">
+        <div @click="$emit('right')" class="right">
             <i class="fa-solid fa-chevron-right"></i>
         </div>
     </div>

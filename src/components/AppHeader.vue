@@ -48,7 +48,7 @@ export default{
 <style lang="scss" scoped>
 nav{
   .nav-top{
-    width: 1300px;
+    max-width: 1300px;
     margin: auto;
     display: flex;
     justify-content: space-between;
