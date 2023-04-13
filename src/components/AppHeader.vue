@@ -1,8 +1,10 @@
 <script>
+import { store } from '../store';
+
 export default{
   data(){
     return{
-
+      store,
     }
   }
 }
@@ -31,7 +33,7 @@ export default{
         <img src="../../public/images/MasterStudy.svg" alt="">
         <p><i class="fa-solid fa-bars"></i> CATEGORY</p>
         <div>
-          <input type="text" placeholder="Search courses">
+          <input v-model="store.search" type="text" placeholder="Search courses">
           <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <a href="#"><span><i class="fa-solid fa-bullhorn"></i></span> Become an instructor</a>

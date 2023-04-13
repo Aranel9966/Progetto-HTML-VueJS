@@ -1,9 +1,10 @@
 <script>
+import { store } from '../store';
 export default {
     name:'AppCard',
     data(){
         return{
-
+            store,
         }
     },
     props:{
@@ -14,7 +15,8 @@ export default {
 </script>
 <template>
     <div class="row">
-        <div v-for="(card,index) in cards" class="card">
+        
+        <div v-for="(card,index) in cards"  v-show="card.text.toLowerCase().includes(this.store.search.toLowerCase())" class="card">
             <div class="img-card">
                 <img :src=card.img alt="">
             </div>

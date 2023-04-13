@@ -1,4 +1,5 @@
 <script>
+import { store } from './store';
 import AppHeader from './components/AppHeader.vue';
 import '@fortawesome/fontawesome-free/css/all.css';
 import AppjumbotronVue from './components/Appjumbotron.vue';
@@ -10,6 +11,7 @@ import AppFooter from './components/AppFooter.vue';
 export default{
   data(){
     return{
+      store,
       cards1:[
                 {
                     type:'Decelopment',
@@ -252,7 +254,7 @@ export default{
   <div>
     <AppHeader></AppHeader>
     <AppjumbotronVue></AppjumbotronVue>
-    <AppCard :cards="cards1"></AppCard>
+    <AppCard  :cards="cards1"></AppCard>
     <AppMainTop></AppMainTop>
     <AppCard :cards="cards2"></AppCard>
     <AppCard :cards="cards3"></AppCard>
