@@ -86,7 +86,7 @@ h2{
     .color{
         width: 60%;
         border-right: 200px solid transparent;
-        border-bottom: 406.11px solid #ff4450;
+        border-bottom: 398px solid #ff4450;
         position: absolute;
         top: 0;
         left: 0;

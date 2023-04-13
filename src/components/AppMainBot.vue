@@ -129,6 +129,8 @@ export default {
   .container-bot{
         .text{
             left: 0px;
+            line-height:22px;
+
         }
     }
     .left-container,.right-container{
