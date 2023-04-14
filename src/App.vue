@@ -1,8 +1,8 @@
 <script>
 import { store } from './store';
-import AppHeader from './components/AppHeader.vue';
 import '@fortawesome/fontawesome-free/css/all.css';
-import AppjumbotronVue from './components/Appjumbotron.vue';
+import AppHeader from './components/AppHeader.vue';
+import AppJumbotron from './components/AppJumbotron.vue';
 import AppCard from './components/AppCard.vue';
 import AppMainTop from './components/AppMainTop.vue';
 import AppMainMid from './components/AppMainMid.vue';
@@ -240,7 +240,7 @@ export default{
   },
   components:{
     AppHeader,
-    AppjumbotronVue,
+    AppJumbotron,
     AppCard,
     AppMainTop,
     AppMainMid,
@@ -253,7 +253,7 @@ export default{
 <template>
   <div>
     <AppHeader></AppHeader>
-    <AppjumbotronVue></AppjumbotronVue>
+    <AppJumbotron></AppJumbotron>
     <AppCard  :cards="cards1"></AppCard>
     <AppMainTop></AppMainTop>
     <AppCard :cards="cards2"></AppCard>
